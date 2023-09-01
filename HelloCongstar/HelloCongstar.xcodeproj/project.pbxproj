@@ -97,12 +97,9 @@
 		24C71F0C2AA1B57A002C5557 /* HelloCongstar */ = {
 			isa = PBXGroup;
 			children = (
-				24C71F0D2AA1B57A002C5557 /* AppDelegate.swift */,
-				24C71F0F2AA1B57A002C5557 /* SceneDelegate.swift */,
-				24C71F112AA1B57A002C5557 /* ViewController.swift */,
-				24C71F162AA1B57C002C5557 /* Assets.xcassets */,
-				24C71F182AA1B57C002C5557 /* LaunchScreen.storyboard */,
-				24C71F1B2AA1B57C002C5557 /* Info.plist */,
+				24C71F3D2AA1B973002C5557 /* Source */,
+				24C71F3E2AA1B97C002C5557 /* Resources */,
+				24C71F412AA1B9B4002C5557 /* Support */,
 			);
 			path = HelloCongstar;
 			sourceTree = "<group>";
@@ -122,6 +119,49 @@
 				24C71F302AA1B57C002C5557 /* HelloCongstarUITestsLaunchTests.swift */,
 			);
 			path = HelloCongstarUITests;
+			sourceTree = "<group>";
+		};
+		24C71F3D2AA1B973002C5557 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				24C71F3F2AA1B98F002C5557 /* AppDelegate */,
+				24C71F402AA1B9A5002C5557 /* Launch */,
+				24C71F112AA1B57A002C5557 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		24C71F3E2AA1B97C002C5557 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24C71F162AA1B57C002C5557 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24C71F3F2AA1B98F002C5557 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				24C71F0F2AA1B57A002C5557 /* SceneDelegate.swift */,
+				24C71F0D2AA1B57A002C5557 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		24C71F402AA1B9A5002C5557 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				24C71F182AA1B57C002C5557 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		24C71F412AA1B9B4002C5557 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				24C71F1B2AA1B57C002C5557 /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,7 +467,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DMNY97ERC7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloCongstar/Info.plist;
+				INFOPLIST_FILE = HelloCongstar/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -454,7 +494,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DMNY97ERC7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloCongstar/Info.plist;
+				INFOPLIST_FILE = HelloCongstar/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
