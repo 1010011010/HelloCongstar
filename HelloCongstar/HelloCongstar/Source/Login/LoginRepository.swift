@@ -1,16 +1,24 @@
 import Foundation
 
 protocol LoginRepository {
-    func doLogin(login: LoginModel) async -> UserModel
+    func doLogin(login: LoginModel) async -> Result<UserModel, Error>
 }
 
 class LoginRepositoryMock: LoginRepository {
 
-    func doLogin(login: LoginModel) async -> UserModel {
-        if login.userName == "jim" && login.password == "1234" {
-            return UserModel(name: "Jim", lastName: "Carrey")
+    enum LoginError: Error {
+        case invalidCredentials
+    }
+
+    func doLogin(login: LoginModel) async -> Result<UserModel, Error> {
+
+        // wait for 3 seconds
+        try? await Task.sleep(nanoseconds: 3_000_000_000)
+
+        if login.userName.lowercased() == "jim" && login.password == "1234" {
+            return .success(UserModel(name: "Jim", lastName: "Carrey"))
         } else {
-            return UserModel(name: "Unknown", lastName: "Unknown")
+            return .failure(LoginError.invalidCredentials)
         }
     }
 }

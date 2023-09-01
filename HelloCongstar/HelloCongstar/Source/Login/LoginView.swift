@@ -10,16 +10,16 @@ struct LoginView: View {
         
         ZStack {
             Color.black
-                .ignoresSafeArea()
-            
+                    .ignoresSafeArea()
+
             VStack(spacing: 20) {
-                
+
                 TextField("Username", text: $viewModel.userName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+
                 SecureField("Enter a password", text: $viewModel.password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+
                 Button {
                     Task {
                         await viewModel.login()
@@ -28,19 +28,25 @@ struct LoginView: View {
                     ZStack {
                         Color.accentColor
                         Text("Login")
-                            .foregroundColor(.white)
+                                .foregroundColor(.white)
                     }
-                    .cornerRadius(25)
-                    .frame(height: 50)
+                            .cornerRadius(25)
+                            .frame(height: 50)
                 }
             }
-            .padding()
+                    .padding()
         }
         .sheet(item: $viewModel.user) { user in
             VStack {
                 Text(user.name)
                 Text(user.lastName)
             }
+        }
+        .alert(item: $viewModel.error) { errorItem in
+            Alert(
+                title: Text(errorItem.title),
+                message: Text(errorItem.message)
+            )
         }
     }
 }
