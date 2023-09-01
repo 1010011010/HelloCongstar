@@ -12,24 +12,28 @@ struct LoginView: View {
             Color.black
                 .ignoresSafeArea()
             
-            VStack {
+            VStack(spacing: 20) {
                 
-                TextField(text: $viewModel.userName) {
-                    Text("User Name")
-                }
-                .background(Color.white)
-                .accentColor(.white)
+                TextField("Username", text: $viewModel.userName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 SecureField("Enter a password", text: $viewModel.password)
-                    .background(Color.white)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Button("Login") {
+                Button {
                     Task {
                         await viewModel.login()
                     }
+                } label: {
+                    ZStack {
+                        Color.accentColor
+                        Text("Login")
+                            .foregroundColor(.white)
+                    }
+                    .cornerRadius(25)
+                    .frame(height: 50)
                 }
             }
-            
             .padding()
         }
         .sheet(item: $viewModel.user) { user in
