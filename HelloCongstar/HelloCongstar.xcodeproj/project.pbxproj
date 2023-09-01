@@ -19,7 +19,10 @@
 		24C71F482AA1BBE6002C5557 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F472AA1BBE6002C5557 /* LoginViewModel.swift */; };
 		24C71F4A2AA1BC31002C5557 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F492AA1BC31002C5557 /* LoginModel.swift */; };
 		24C71F4C2AA1BE99002C5557 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F4B2AA1BE99002C5557 /* LoginRepository.swift */; };
+		24C71F512AA211E5002C5557 /* URLExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F502AA211E5002C5557 /* URLExtensionTests.swift */; };
 		72B9E36FF82EB4C19690C088 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9ED63CC7788989CC78FE5 /* UserModel.swift */; };
+		72B9E5A5845F60889A923219 /* NSURL+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9E9F1F9E71AED6597BEE8 /* NSURL+Extensions.m */; };
+		72B9E934896DBB6EEE70D237 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9EA563080CA727672288A /* URLExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,10 @@
 		24C71F472AA1BBE6002C5557 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		24C71F492AA1BC31002C5557 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		24C71F4B2AA1BE99002C5557 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		24C71F502AA211E5002C5557 /* URLExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionTests.swift; sourceTree = "<group>"; };
+		72B9E72C9448089FC239F75D /* NSURL+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extensions.h"; sourceTree = "<group>"; };
+		72B9E9F1F9E71AED6597BEE8 /* NSURL+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extensions.m"; sourceTree = "<group>"; };
+		72B9EA563080CA727672288A /* URLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
 		72B9ED63CC7788989CC78FE5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				24C71F242AA1B57C002C5557 /* HelloCongstarTests.swift */,
+				24C71F502AA211E5002C5557 /* URLExtensionTests.swift */,
 			);
 			path = HelloCongstarTests;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				24C71F3F2AA1B98F002C5557 /* AppDelegate */,
+				72B9E3F46DA1492EDC0DF8E2 /* Common */,
 				24C71F402AA1B9A5002C5557 /* Launch */,
 				24C71F422AA1BB90002C5557 /* Login */,
 			);
@@ -185,6 +194,24 @@
 				72B9ED63CC7788989CC78FE5 /* UserModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		72B9E3F46DA1492EDC0DF8E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				72B9EC40003784028A01407D /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		72B9EC40003784028A01407D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72B9E72C9448089FC239F75D /* NSURL+Extensions.h */,
+				72B9E9F1F9E71AED6597BEE8 /* NSURL+Extensions.m */,
+				72B9EA563080CA727672288A /* URLExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +285,7 @@
 					};
 					24C71F1F2AA1B57C002C5557 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 24C71F092AA1B57A002C5557;
 					};
 					24C71F292AA1B57C002C5557 = {
@@ -325,6 +353,8 @@
 				24C71F482AA1BBE6002C5557 /* LoginViewModel.swift in Sources */,
 				24C71F102AA1B57A002C5557 /* SceneDelegate.swift in Sources */,
 				72B9E36FF82EB4C19690C088 /* UserModel.swift in Sources */,
+				72B9E5A5845F60889A923219 /* NSURL+Extensions.m in Sources */,
+				72B9E934896DBB6EEE70D237 /* URLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C71F252AA1B57C002C5557 /* HelloCongstarTests.swift in Sources */,
+				24C71F512AA211E5002C5557 /* URLExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

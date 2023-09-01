@@ -16,7 +16,7 @@ struct LoginView: View {
             if viewModel.isLoading {
                 
                 ProgressView()
-                    .offset(CGSize(width: 0, height: -200))
+                    .offset(CGSize(width: 0, height: -100))
                     .padding()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
                 
@@ -24,7 +24,15 @@ struct LoginView: View {
             
             Group {
                 VStack(spacing: 20) {
+                    
+                    Image(systemName: "swift")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .foregroundColor(.white)
+                        .padding(.top, 100)
+                    
                     Spacer()
+                    
                     TextField("Username", text: $viewModel.userName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
@@ -51,8 +59,7 @@ struct LoginView: View {
         }
         .sheet(item: $viewModel.user) { user in
             VStack {
-                Text(user.name)
-                Text(user.lastName)
+                Text("Hello \(user.name) \(user.lastName)")
             }
         }
         .alert(item: $viewModel.error) { errorItem in
