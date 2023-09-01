@@ -3,25 +3,11 @@ import SwiftUI
 
 @MainActor
 final class LoginViewModel: ObservableObject {
-    
-    struct UserItem: Identifiable {
-        let id = UUID()
-        let name: String
-        let lastName: String
-    }
-    struct ErrorItem: Identifiable {
-        let id = UUID()        
-        let title: String
-        let message: String
-    }
-    
-    @Published var isLoading: Bool = false
-    
+        
     @Published var userName: String = ""
     @Published var password: String = ""
     
-    @Published var user: UserItem?
-    @Published var error: ErrorItem?
+    @Published var user: UserModel?
     
     private let loginRepository: LoginRepository
     
@@ -30,23 +16,16 @@ final class LoginViewModel: ObservableObject {
     }
     
     func login() {
-        
-        self.isLoading = true
-        
+                
         let loginModel = LoginModel(userName: userName, password: password)
         let result = loginRepository.doLogin(login: loginModel)
-        
-        self.isLoading = false
-        
+                
         switch result {
         case .success(let user):
-            let item = UserItem(name: user.name, lastName: user.lastName)
-            self.user = item
-        case .failure(_):
-            self.error = ErrorItem(
-                title: "Error",
-                message: "Login failed"
-            )
+            self.user = user
+        case .failure(let error):
+           // TODO: handle error
+            print("Error")
         }
     }
 }
