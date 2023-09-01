@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  HelloCongstar
-//
-//  Created by Ilja Modrau on 01.09.23.
-//
-
 import UIKit
 
 @main
