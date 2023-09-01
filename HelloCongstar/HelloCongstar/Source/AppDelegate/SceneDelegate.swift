@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -12,8 +13,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
                        
-            window.rootViewController = LoginController()
-//            window.rootViewController = UIHostingController(rootView: LoginView())
+            // window.rootViewController = LoginController()
+            window.rootViewController = UIHostingController(rootView: LoginView())
             self.window = window
             window.makeKeyAndVisible()
         }
