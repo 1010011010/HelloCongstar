@@ -16,6 +16,8 @@ final class LoginViewModel: ObservableObject {
     }
     
     
+    @Published var isLoading: Bool = false
+
     @Published var userName: String = ""
     @Published var password: String = ""
     
@@ -30,8 +32,14 @@ final class LoginViewModel: ObservableObject {
     }
 
     func login() async {
+
+        self.isLoading = true
+
         let loginModel = LoginModel(userName: userName, password: password)
         let result = await loginRepository.doLogin(login: loginModel)
+
+        self.isLoading = false
+
         switch result {
         case .success(let user):
             let item = UserItem(name: user.name, lastName: user.lastName)

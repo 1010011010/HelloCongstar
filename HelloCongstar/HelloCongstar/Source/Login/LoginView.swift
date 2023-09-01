@@ -9,32 +9,45 @@ struct LoginView: View {
     var body: some View {
         
         ZStack {
+
             Color.black
-                    .ignoresSafeArea()
-
-            VStack(spacing: 20) {
-
-                TextField("Username", text: $viewModel.userName)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-
-                SecureField("Enter a password", text: $viewModel.password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-
-                Button {
-                    Task {
-                        await viewModel.login()
-                    }
-                } label: {
-                    ZStack {
-                        Color.accentColor
-                        Text("Login")
-                                .foregroundColor(.white)
-                    }
-                            .cornerRadius(25)
-                            .frame(height: 50)
-                }
-            }
+                .ignoresSafeArea()
+            
+            if viewModel.isLoading {
+                
+                ProgressView()
+                    .offset(CGSize(width: 0, height: -200))
                     .padding()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                
+            }
+            
+            Group {
+                VStack(spacing: 20) {
+                    Spacer()
+                    TextField("Username", text: $viewModel.userName)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    SecureField("Enter a password", text: $viewModel.password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    Button {
+                        Task {
+                            await viewModel.login()
+                        }
+                    } label: {
+                        ZStack {
+                            Color.accentColor
+                            Text("Login")
+                                .foregroundColor(.white)
+                        }
+                        .cornerRadius(25)
+                        .frame(height: 50)
+                    }
+                    Spacer()
+                }
+                .padding()
+            }
         }
         .sheet(item: $viewModel.user) { user in
             VStack {
