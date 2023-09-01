@@ -3,7 +3,7 @@ import SwiftUI
 
 @MainActor
 final class LoginViewModel: ObservableObject {
-
+    
     struct UserItem: Identifiable {
         let id = UUID()
         let name: String
@@ -15,31 +15,29 @@ final class LoginViewModel: ObservableObject {
         let message: String
     }
     
-    
     @Published var isLoading: Bool = false
-
+    
     @Published var userName: String = ""
     @Published var password: String = ""
     
     @Published var user: UserItem?
     @Published var error: ErrorItem?
-
     
     private let loginRepository: LoginRepository
-
+    
     init(loginRepository: LoginRepository) {
         self.loginRepository = loginRepository
     }
-
-    func login() async {
-
+    
+    func login() {
+        
         self.isLoading = true
-
+        
         let loginModel = LoginModel(userName: userName, password: password)
-        let result = await loginRepository.doLogin(login: loginModel)
-
+        let result = loginRepository.doLogin(login: loginModel)
+        
         self.isLoading = false
-
+        
         switch result {
         case .success(let user):
             let item = UserItem(name: user.name, lastName: user.lastName)

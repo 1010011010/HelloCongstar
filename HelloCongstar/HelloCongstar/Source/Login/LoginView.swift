@@ -17,7 +17,6 @@ struct LoginView: View {
                 
                 ProgressView()
                     .offset(CGSize(width: 0, height: -200))
-                    .padding()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
                 
             }
@@ -32,9 +31,7 @@ struct LoginView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     Button {
-                        Task {
-                            await viewModel.login()
-                        }
+                           viewModel.login()
                     } label: {
                         ZStack {
                             Color.accentColor
