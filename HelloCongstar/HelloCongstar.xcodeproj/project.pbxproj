@@ -10,19 +10,19 @@
 		24936F782AA21635005C5088 /* NSURL+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 24936F762AA21635005C5088 /* NSURL+Extensions.m */; };
 		24C71F0E2AA1B57A002C5557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F0D2AA1B57A002C5557 /* AppDelegate.swift */; };
 		24C71F102AA1B57A002C5557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F0F2AA1B57A002C5557 /* SceneDelegate.swift */; };
-		24C71F122AA1B57A002C5557 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F112AA1B57A002C5557 /* LoginController.swift */; };
 		24C71F172AA1B57C002C5557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C71F162AA1B57C002C5557 /* Assets.xcassets */; };
 		24C71F1A2AA1B57C002C5557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C71F182AA1B57C002C5557 /* LaunchScreen.storyboard */; };
 		24C71F252AA1B57C002C5557 /* HelloCongstarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F242AA1B57C002C5557 /* HelloCongstarTests.swift */; };
 		24C71F2F2AA1B57C002C5557 /* HelloCongstarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F2E2AA1B57C002C5557 /* HelloCongstarUITests.swift */; };
 		24C71F312AA1B57C002C5557 /* HelloCongstarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F302AA1B57C002C5557 /* HelloCongstarUITestsLaunchTests.swift */; };
-		24C71F462AA1BBCA002C5557 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F452AA1BBCA002C5557 /* LoginView.swift */; };
-		24C71F482AA1BBE6002C5557 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F472AA1BBE6002C5557 /* LoginViewModel.swift */; };
-		24C71F4A2AA1BC31002C5557 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F492AA1BC31002C5557 /* LoginModel.swift */; };
-		24C71F4C2AA1BE99002C5557 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F4B2AA1BE99002C5557 /* LoginRepository.swift */; };
 		24C71F512AA211E5002C5557 /* URLExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C71F502AA211E5002C5557 /* URLExtensionTests.swift */; };
-		72B9E36FF82EB4C19690C088 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9ED63CC7788989CC78FE5 /* UserModel.swift */; };
+		72B9E2532D3438E40D194E1D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9E5D051FB08ECA93F85ED /* LoginController.swift */; };
+		72B9E3F06F9BDAB4C4CB1CCF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9EBEBE9191387233CEA7B /* LoginView.swift */; };
+		72B9E4129EDACA21BDB6698C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9E4D919F53B4D73F08B31 /* LoginModel.swift */; };
+		72B9E52CBA128F0DDF14835C /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9E7488C89D2E7ED1F67FB /* LoginRepository.swift */; };
+		72B9E6997C63C2F6B21E081A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9E9395BFA9D41C8F9162D /* UserModel.swift */; };
 		72B9E934896DBB6EEE70D237 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9EA563080CA727672288A /* URLExtensions.swift */; };
+		72B9EB7C0E6450A4428C3063 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B9E772FC6C2D6BC2292A30 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		24C71F0A2AA1B57A002C5557 /* HelloCongstar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCongstar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C71F0D2AA1B57A002C5557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C71F0F2AA1B57A002C5557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24C71F112AA1B57A002C5557 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		24C71F162AA1B57C002C5557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C71F192AA1B57C002C5557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24C71F1B2AA1B57C002C5557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,13 +57,14 @@
 		24C71F2A2AA1B57C002C5557 /* HelloCongstarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCongstarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C71F2E2AA1B57C002C5557 /* HelloCongstarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCongstarUITests.swift; sourceTree = "<group>"; };
 		24C71F302AA1B57C002C5557 /* HelloCongstarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCongstarUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		24C71F452AA1BBCA002C5557 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		24C71F472AA1BBE6002C5557 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		24C71F492AA1BC31002C5557 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		24C71F4B2AA1BE99002C5557 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		24C71F502AA211E5002C5557 /* URLExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionTests.swift; sourceTree = "<group>"; };
+		72B9E4D919F53B4D73F08B31 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		72B9E5D051FB08ECA93F85ED /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		72B9E7488C89D2E7ED1F67FB /* LoginRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		72B9E772FC6C2D6BC2292A30 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		72B9E9395BFA9D41C8F9162D /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		72B9EA563080CA727672288A /* URLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
-		72B9ED63CC7788989CC78FE5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		72B9EBEBE9191387233CEA7B /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,12 +187,8 @@
 		24C71F422AA1BB90002C5557 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				24C71F112AA1B57A002C5557 /* LoginController.swift */,
-				24C71F452AA1BBCA002C5557 /* LoginView.swift */,
-				24C71F472AA1BBE6002C5557 /* LoginViewModel.swift */,
-				24C71F492AA1BC31002C5557 /* LoginModel.swift */,
-				24C71F4B2AA1BE99002C5557 /* LoginRepository.swift */,
-				72B9ED63CC7788989CC78FE5 /* UserModel.swift */,
+				72B9E49E9C71FC63BAFA5FC8 /* Model */,
+				72B9EBD4684B6984226A65E7 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -204,6 +200,26 @@
 				72B9EC40003784028A01407D /* Extensions */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		72B9E49E9C71FC63BAFA5FC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72B9E4D919F53B4D73F08B31 /* LoginModel.swift */,
+				72B9E7488C89D2E7ED1F67FB /* LoginRepository.swift */,
+				72B9E9395BFA9D41C8F9162D /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72B9EBD4684B6984226A65E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72B9E5D051FB08ECA93F85ED /* LoginController.swift */,
+				72B9EBEBE9191387233CEA7B /* LoginView.swift */,
+				72B9E772FC6C2D6BC2292A30 /* LoginViewModel.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		72B9EC40003784028A01407D /* Extensions */ = {
@@ -348,16 +364,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C71F122AA1B57A002C5557 /* LoginController.swift in Sources */,
-				24C71F4A2AA1BC31002C5557 /* LoginModel.swift in Sources */,
 				24C71F0E2AA1B57A002C5557 /* AppDelegate.swift in Sources */,
-				24C71F4C2AA1BE99002C5557 /* LoginRepository.swift in Sources */,
 				24936F782AA21635005C5088 /* NSURL+Extensions.m in Sources */,
-				24C71F462AA1BBCA002C5557 /* LoginView.swift in Sources */,
-				24C71F482AA1BBE6002C5557 /* LoginViewModel.swift in Sources */,
 				24C71F102AA1B57A002C5557 /* SceneDelegate.swift in Sources */,
-				72B9E36FF82EB4C19690C088 /* UserModel.swift in Sources */,
 				72B9E934896DBB6EEE70D237 /* URLExtensions.swift in Sources */,
+				72B9E6997C63C2F6B21E081A /* UserModel.swift in Sources */,
+				72B9E4129EDACA21BDB6698C /* LoginModel.swift in Sources */,
+				72B9E3F06F9BDAB4C4CB1CCF /* LoginView.swift in Sources */,
+				72B9EB7C0E6450A4428C3063 /* LoginViewModel.swift in Sources */,
+				72B9E2532D3438E40D194E1D /* LoginController.swift in Sources */,
+				72B9E52CBA128F0DDF14835C /* LoginRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
